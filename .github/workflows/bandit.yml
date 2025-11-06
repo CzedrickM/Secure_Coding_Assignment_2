@@ -25,14 +25,13 @@ jobs:
           targets: "."
 
           # Default report for severity issues
-          severity: "default"
+          severity: "all"
 
           # Default report for confidence issues
-          confidence: "default"
+          confidence: "all"
 
-          # Default tests 
+          # Default tests
           tests: "default"
 
           # Default profile
           profile: "default"
-          
