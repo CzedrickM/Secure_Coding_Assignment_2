@@ -1,17 +1,18 @@
 name: Bandit
 
 on:
-    push:
-        branches: [ main ]
+  push:
+    branches: [main]
 permissions:
-    security-events: write
-    # only required for workflows in private repositories
-    actions: read
-    contents: read
+  security-events: write
+  # only required for workflows in private repositories
+  actions: read
+  contents: read
 
 jobs:
   analyze:
-    runs-on: ubuntu-latest
+    runs-on:
+      ubuntu-latest
       # required for all workflows
     steps:
       - name: Perform Bandit Analysis
