@@ -11,10 +11,12 @@ permissions:
 
 jobs:
   analyze:
-    runs-on: ubuntu-latest
+    runs-on:
+      ubuntu-latest
       # required for all workflows
     steps:
-        - name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Perform Bandit Analysis
         uses: PyCQA/bandit-action@v1.0.1
